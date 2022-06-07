@@ -1,0 +1,82 @@
+<nav class="top-nav">
+    <ul>
+        <li>
+            <a href="/feed" class="top-menu top-menu--<%=  page == 'feed'  ? 'active': '' %>">
+                <div class="top-menu__icon"> <i data-lucide="home"></i> </div>
+                <div class="top-menu__title"> Feed <i  class="top-menu__sub-icon"></i> </div>
+            </a>
+            
+        </li>
+        <li>
+            <a href="/experts" class="top-menu top-menu--<%=  page == 'experts'  ? 'active': '' %>">
+                <div class="top-menu__icon"> <i data-lucide="box"></i> </div>
+                <div class="top-menu__title"> Our Experts <i class="top-menu__sub-icon"></i> </div>
+            </a>
+            
+        </li>
+        <li>
+            <a href="/pricing" class="top-menu top-menu--<%=  page == 'pricing'  ? 'active': '' %>">
+                <div class="top-menu__icon"> <i data-lucide="activity"></i> </div>
+                <div class="top-menu__title"> Pricing <i class="top-menu__sub-icon"></i> </div>
+            </a>
+            
+        </li>
+        <li>
+            <a href="javascript:;" class="top-menu">
+                <div class="top-menu__icon"> <i data-lucide="layout"></i> </div>
+                <div class="top-menu__title"> FAQs <i  class="top-menu__sub-icon"></i> </div>
+            </a>
+          
+        </li>
+        <li>
+            <a href="javascript:;" class="top-menu">
+                <div class="top-menu__icon"> <i data-lucide="inbox"></i> </div>
+                <div class="top-menu__title"> About Us <i data-lucide="chevron-down" class="top-menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-lucide="activity"></i> </div>
+                        <div class="top-menu__title"> Terms and Conditions <i  class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-lucide="activity"></i> </div>
+                        <div class="top-menu__title"> How It Works <i  class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-lucide="activity"></i> </div>
+                        <div class="top-menu__title"> Contact Us <i  class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    
+                </li>
+               
+            </ul>
+        </li>
+        <% if ( typeof account !== 'undefined') {%>
+        <li>
+            <a href="/dashboard" class="top-menu top-menu--<%=  page == 'dashboard'  ? 'active': '' %>">
+                <div class="top-menu__icon"> <i data-lucide="sidebar"></i> </div>
+                <div class="top-menu__title"> Dashboard <i class="top-menu__sub-icon"></i> </div>
+            </a>
+            
+        </li>
+        <% } %>
+
+        <% if ( typeof expert !== 'undefined') {%>
+        <% if(expert.isEmployed ==1) { %>
+        <form method="get" action="/dashboard">
+            <button class="btnAdd" type="submit">Add Post</button>
+        </form>
+        <% } %>
+        <% } %>
+
+        <% if ( typeof account !== 'undefined') {%>
+            <% if( account.isExpert != 1 && account.isAdmin != 1) { %>
+            <form method="get" action="/experts">
+                <button class="btnAdd" type="submit">Ask Experts</button>
+            </form>
+            <% } %>
+            <% } %>
+        
+    </ul>
+</nav>

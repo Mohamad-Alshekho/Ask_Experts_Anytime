@@ -1,0 +1,81 @@
+.main {
+    position: relative;
+}
+.top-nav {
+    position: fixed;
+    top: 90px;
+    background-color: #1a3175;
+    border-radius: 18px;
+    width: 94.6%;
+    margin-left: 0.5%;
+    padding-bottom: 18px;
+    transition: all .2s ease 0s;
+}
+.wrapper.wrapper--top-nav {
+    margin-top: 147px;
+    transition: all .3s ease 0s;
+}
+.wrapper:before {
+    content: unset !important;
+}
+.wrapper.wrapper--top-nav .wrapper-box {
+    margin-top: unset;
+    padding-top: unset;
+}
+.top-bar-boxed {
+    position: fixed;
+    width: 100%;
+    background-color: #1e3a8a;
+}
+
+.tom-select .ts-input {
+    padding: 12px 16px;
+    /* color: #999; */
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #e5e7eb;
+    color: #b4bfce;
+    padding: 0 16px 0 0;
+    border-radius: 0.25rem;
+}
+.custom-file-upload .btn {
+    padding: 10px 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.catFilter {
+    margin-bottom: 17px;
+    margin-left: 611px;
+}
+
+.btnAdd {
+    width: 7rem;
+    height: 43px;
+    margin-left: 270px;
+    margin-bottom: 0px;
+    margin-right: 0;
+    background-color: white;
+    color: #1e3a8a;
+    border-radius: 10px;
+    margin-top: 6px;
+    font-weight: bold;
+        
+}
+.col-span-12 custom span  {
+position: fixed;
+align-items: baseline;
+/* margin: -35px; */
+margin-left: 896px;
+width: 438px;
+}
+
+/* btnAdd: hover {
+    background-color: #1e3a8a;
+    color: #white;
+} */

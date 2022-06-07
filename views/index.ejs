@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<!--
+Template Name: Icewall - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Dashboard - Midone - Tailwind HTML Admin Template</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/custom.css" />
+    <style>
+        .comment-container {
+            position: relative;
+        }
+        .comment-submit {
+            position: absolute;
+            right: 20px;
+            top: 7px;
+            cursor: pointer;
+        }
+        .post {
+            border-bottom: 35px solid #f1f5f9;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .h-56 {
+            height: 35rem;
+        }
+    </style>
+
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="main">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="" class="flex mr-auto">
+                <img alt="Midone - HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <i data-lucide="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        </div>
+        <ul class="border-t border-white/[0.08] py-5 hidden">
+            <li>
+                <a href="javascript:;.html" class="menu menu--active">
+                    <div class="menu__icon"> <i data-lucide="home"></i> </div>
+                    <div class="menu__title"> Dashboard <i data-lucide="chevron-down"
+                            class="menu__sub-icon transform rotate-180"></i> </div>
+                </a>
+                <ul class="menu__sub-open">
+                    <li>
+                        <a href="side-menu-light-dashboard-overview-1.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 1 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-dashboard-overview-3.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 3 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-dashboard-overview-4.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 4 </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="box"></i> </div>
+                    <div class="menu__title"> Menu Layout <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                    </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-dashboard-overview-1.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Side Menu </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="simple-menu-light-dashboard-overview-1.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Simple Menu </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="top-menu-light-dashboard-overview-1.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Top Menu </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="side-menu-light-inbox.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="inbox"></i> </div>
+                    <div class="menu__title"> Inbox </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-light-file-manager.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                    <div class="menu__title"> File Manager </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-light-point-of-sale.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="credit-card"></i> </div>
+                    <div class="menu__title"> Point of Sale </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-light-chat.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="message-square"></i> </div>
+                    <div class="menu__title"> Chat </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-light-post.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="file-text"></i> </div>
+                    <div class="menu__title"> Post </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-light-calendar.html" class="menu">
+                    <div class="menu__icon"> <i data-lucide="calendar"></i> </div>
+                    <div class="menu__title"> Calendar </div>
+                </a>
+            </li>
+            <li class="menu__devider my-6"></li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="edit"></i> </div>
+                    <div class="menu__title"> Crud <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-crud-data-list.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Data List </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-crud-form.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Form </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="users"></i> </div>
+                    <div class="menu__title"> Users <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-users-layout-1.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Layout 1 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-users-layout-2.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Layout 2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-users-layout-3.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Layout 3 </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="trello"></i> </div>
+                    <div class="menu__title"> Profile <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-profile-overview-1.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 1 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-profile-overview-2.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-profile-overview-3.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overview 3 </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="layout"></i> </div>
+                    <div class="menu__title"> Pages <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Wizards <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-wizard-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wizard-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wizard-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Blog <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-blog-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-blog-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-blog-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Pricing <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-pricing-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-pricing-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Invoice <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-invoice-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-invoice-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> FAQ <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-faq-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-faq-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-faq-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login-light-login.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Login </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login-light-register.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Register </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main-light-error-page.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Error Page </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-update-profile.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Update profile </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-change-password.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Change Password </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__devider my-6"></li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="inbox"></i> </div>
+                    <div class="menu__title"> Components <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                    </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Table <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-regular-table.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Regular Table</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-tabulator.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Tabulator</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Overlay <i data-lucide="chevron-down" class="menu__sub-icon "></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-modal.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Modal</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-slide-over.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Slide Over</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-notification.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Notification</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-tab.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Tab </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-accordion.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Accordion </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-button.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Button </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-alert.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Alert </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-progress-bar.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Progress Bar </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-tooltip.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Tooltip </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-dropdown.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Dropdown </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-typography.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Typography </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-icon.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Icon </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-loading-icon.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Loading Icon </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="sidebar"></i> </div>
+                    <div class="menu__title"> Forms <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-regular-form.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Regular Form </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-datepicker.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Datepicker </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-tom-select.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Tom Select </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-file-upload.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> File Upload </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Wysiwyg Editor <i data-lucide="chevron-down"
+                                    class="menu__sub-icon "></i> </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-light-wysiwyg-editor-classic.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Classic</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wysiwyg-editor-inline.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Inline</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wysiwyg-editor-balloon.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Balloon</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wysiwyg-editor-balloon-block.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Balloon Block</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-light-wysiwyg-editor-document.html" class="menu">
+                                    <div class="menu__icon"> <i data-lucide="zap"></i> </div>
+                                    <div class="menu__title">Document</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-validation.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Validation </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                    <div class="menu__title"> Widgets <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-light-chart.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Chart </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-slider.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Slider </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-light-image-zoom.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                            <div class="menu__title"> Image Zoom </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <!-- BEGIN: Top Bar -->
+    <%- include('./partials/top-bar.ejs') %>
+        <!-- END: Top Bar -->
+
+
+        <!-- BEGIN: Top Menu -->
+        <%- include('./partials/top-nav.ejs') %>
+            <!-- END: Top Menu -->
+
+
+            <!-- BEGIN: Content -->
+            <div class="wrapper wrapper--top-nav">
+                <div class="wrapper-box">
+                    <!-- BEGIN: Content -->
+                    <div class="content">
+                        <div class="grid grid-cols-12 gap-6">
+                            <div class="col-span-12 2xl:col-span-9">
+                                <div class="grid grid-cols-12 gap-6">
+                                    <!-- BEGIN: General Report -->
+                                    <div class="col-span-12 mt-8">
+                                        <div class="intro-y flex items-center h-10">
+                                            <h2 class="text-lg font-medium truncate mr-5">
+                                                Posts
+                                            </h2>
+                                            <!-- <div class="catFilter">
+                                                <select class="sm:ml-auto mt-3 sm:mt-0 sm:w-auto form-select box">
+                                                    <option value="daily">Daily</option>
+                                                    <option value="weekly">Weekly</option>
+                                                    <option value="monthly">Monthly</option>
+                                                    <option value="yearly">Yearly</option>
+                                                    <option value="custom-date">Custom Date</option>
+                                                </select>
+                                            </div> -->
+
+                                            <a href="" class="ml-auto flex items-center text-primary"> <i
+                                                    data-lucide="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-span-12 2xl:col-span-3">
+                                    <div class="2xl:border-l -mb-10 pb-10">
+                                        <div class="2xl:pl-6 grid grid-cols-12 gap-x-6 2xl:gap-x-0 gap-y-6">
+
+
+                                                    <!-- test -->
+                                                    <div class="intro-y col-span-12 md:col-span-4 xl:col-span-8 box posts-container">
+
+                                                    </div>
+                                                    <!-- test -->
+
+
+                                                    <!-- BEGIN: Transactions -->
+                                                    <div
+                                                        class="col-span-12 md:col-span-6 xl:col-span-4 2xl:col-span-12 mt-3 2xl:mt-8">
+                                                        <div class="intro-x flex items-center h-10">
+                                                            <h2 class="text-lg font-medium truncate mr-auto ">
+                                                                Top Experts
+                                                            </h2>
+                                                            <button data-carousel="important-notes" data-target="prev"
+                                                                class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2">
+                                                                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                                                            </button>
+                                                            <button data-carousel="important-notes" data-target="next"
+                                                                class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2">
+                                                                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="mt-5 intro-x">
+                                                            <div class="box zoom-in">
+                                                                <div class="tiny-slider" id="important-notes">
+                                                                    <% for (let expert of experts) { %>
+                                                                    
+                                                                    <div class="p-5 flex">
+    
+                                                                        <div class="text-base font-medium truncate ">
+                                                                            
+                                                                            <%= expert.name%> <%= expert.surname%></div>
+                                                                        <div class="text-slate-400 mt-1"><%= expert.field%> 
+                                                                        </div>
+                                                                        <hr>
+                                                                        <div class="text-slate-500 text-justify mt-1">
+                                                                            <%= expert.about%>    
+                                                                        </div>
+                                                                        <div class="font-medium flex mt-5">
+                                                                            <form method="get" action="/experts">
+                                                                            <button 
+                                                                                class="btn btn-secondary py-1 px-2" type="submit">Explore more
+                                                                              </button>
+                                                                            </form>
+                                                                              <form method="get" action="/getAsk<%= expert.expertId %>">
+                                                                                <button class="btn btn-primary py-1 px-2 mr-2" type="submit" style="width: 50px; margin-left: 220px;">Ask</button>
+                                                                                </form>
+                                                                        </div>
+                                                                    </div>
+                                                                    <% } %>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="margin: 30px;"></div>
+
+                                                        <div class="intro-x flex items-center h-10">
+                                                            <h2 class="text-lg font-medium truncate mr-5">
+                                                                 We Offer
+                                                            </h2>
+                                                        </div>
+                                                        <div class="mt-5">
+                                                            <div class="intro-x">
+                                                                <div
+                                                                    class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                                    <div
+                                                                        class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                                        <img alt="Midone - HTML Admin Template"
+                                                                            src="dist/images/profile-1.jpg">
+                                                                    </div>
+                                                                    <div class="ml-4 mr-auto">
+                                                                        <div class="font-medium">Ask experienced experts in advanced topics</div>
+                                                                        <div class="text-slate-500 text-xs mt-0.5">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="text-success">+</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="intro-x">
+                                                                <div
+                                                                    class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                                    <div
+                                                                        class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                                        <img alt="Midone - HTML Admin Template"
+                                                                            src="dist/images/profile-14.jpg">
+                                                                    </div>
+                                                                    <div class="ml-4 mr-auto">
+                                                                        <div class="font-medium">Get access to thousands of our experts posts
+                                                                        </div>
+                                                                        <div class="text-slate-500 text-xs mt-0.5">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="text-success">+</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="intro-x">
+                                                                <div
+                                                                    class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                                    <div
+                                                                        class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                                        <img alt="Midone - HTML Admin Template"
+                                                                            src="dist/images/profile-9.jpg">
+                                                                    </div>
+                                                                    <div class="ml-4 mr-auto">
+                                                                        <div class="font-medium">Interact with other users
+                                                                        </div>
+                                                                        <div class="text-slate-500 text-xs mt-0.5">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="text-success">+</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="intro-x">
+                                                                <div
+                                                                    class="box px-5 py-3 mb-3 flex items-center zoom-in">
+                                                                    <div
+                                                                        class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                                        <img alt="Midone - HTML Admin Template"
+                                                                            src="dist/images/profile-5.jpg">
+                                                                    </div>
+                                                                    <div class="ml-4 mr-auto">
+                                                                        <div class="font-medium">Apply as an expert and get paid</div>
+                                                                        <div class="text-slate-500 text-xs mt-0.5">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="text-success">+</div>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <a href=""
+                                                                class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-slate-400 dark:border-darkmode-300 text-slate-500">View
+                                                                More</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END: Transactions -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Content -->
+                    </div>
+                </div>
+                <!-- END: Content -->
+
+
+
+<!-- Start test -->
+
+<!-- End test -->
+
+                <!-- BEGIN: Dark Mode Switcher-->
+                
+                <!-- END: Dark Mode Switcher-->
+
+                <!-- BEGIN: JS Assets-->
+                <!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script> -->
+        <script src="dist/js/app.js"></script>
+        <script src="dist/js/custom.js"></script>
+        <!-- END: JS Assets-->
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            var page = 0;
+
+            function fetchPosts(page) {
+                $.ajax({
+                    url: `/postsInfo?page=${page}`,
+                    method: 'GET',
+                    success: function(posts) {
+                        let html_content = '';
+                        for(let post of posts) {
+                            let comments_content = '';
+                            for(let comment of post.comments) {
+                                comments_content += `
+                                    <div class="px-5 pt-3  pb-5 border-t dark:border-darkmode-400">
+                                        <div class="pt-1">
+                                            <div class="flex">
+                                                <div class="w-8 h-8 flex-none image-fit mr-3">
+                                                    <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-10.jpg">
+                                                </div>
+                                                <div class="ml-3 flex-1">
+                                                    <div class="flex items-center"> <a href="" class="font-medium">${comment.fullname}</a> <a href=""
+                                                            class="ml-auto text-xs text-slate-500">Reply</a> </div>
+                                                    <div class="text-slate-500 text-xs sm:text-sm">${comment.timestamp}</div>
+                                                    <div class="mt-2">
+                                                        ${comment.content}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+
+                            let image_content = '';
+                            if(post.attachmentUrl) {
+                                image_content = `
+                                    <div class="h-56 2xl:h-80 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-md" src="/${post.attachmentUrl}">
+                                    </div>
+                                `;
+                            }
+
+                            html_content += `
+                                <div class="intro-y col-span-12 md:col-span-4 xl:col-span-8 box post">
+                                    <div class="flex items-center border-b border-slate-200/60 dark:border-darkmode-400 px-5 py-4">
+                                        <div class="w-10 h-10 flex-none image-fit">
+                                            <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                        </div>
+                                        <div class="ml-3 mr-auto">
+                                            <a href="" class="font-medium">
+                                                ${post.name}
+                                                ${post.surname}
+                                            </a>
+                                            <div class="flex text-slate-500 truncate text-xs mt-0.5"> <a class="text-primary inline-block truncate" href="">
+                                                    ${post.field}
+                                                </a> <span class="mx-1">•</span>
+                                                ${post.timestamp}
+                                            </div>
+                                        </div>
+                                        <div class="dropdown ml-3">
+                                            <a href="javascript:;" class="dropdown-toggle w-5 h-5 text-slate-500" aria-expanded="false"
+                                                data-tw-toggle="dropdown"> <i data-lucide="more-vertical" class="w-4 h-4"></i> </a>
+                                            <div class="dropdown-menu w-40">
+                                                <ul class="dropdown-content">
+                                                    <li>
+                                                        <a href="" class="dropdown-item"> <i data-lucide="edit-2" class="w-4 h-4 mr-2"></i> Edit Post
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete Post
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-5">
+                                        ${image_content}
+                                        <a href="" class="block font-medium text-base mt-5">
+                                            ${post.title}
+                                        </a>
+                                        <div class="text-slate-600 dark:text-slate-500 mt-2">
+                                            ${post.content}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center px-5 py-0.2 border-t border-slate-200/60 dark:border-darkmode-400"></div>
+                                    <div class="px-5 pt-3 pb-5 border-t border-slate-200/60 dark:border-darkmode-400">
+                                        <div class="w-full flex text-slate-500 text-xs sm:text-sm">
+                                            <div class="mr-2"> Comments:
+                                                <span class="font-medium">
+                                                    ${post.nOfComments}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex items-center mt-3">
+                                            <div class="w-8 h-8 flex-none image-fit mr-3">
+                                                <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                            </div>
+                                            <div class="flex-1 relative text-slate-600">
+                                                <div class="comment-container">
+                                                    <input type="text" class="form-control form-control-rounded border-transparent bg-slate-100 pr-10 comment-text" placeholder="Post a comment...">
+                                                    <span class="comment-submit" data-id="${post.postId}">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="send" data-lucide="send" class="lucide lucide-send block mx-auto"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>  
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BEGIN: Comments -->
+                                    ${comments_content}
+                                    <!-- END: Comments -->
+                                </div>
+                            `;
+                        
+                            // html_content += `<h1>Post ${post.postId}</h1>`;
+                        }
+                        $('.posts-container').append(html_content);
+                    }
+                });
+            }
+
+            fetchPosts(page);
+
+            window.addEventListener('scroll', () => {
+                const {
+                    scrollTop,
+                    scrollHeight,
+                    clientHeight
+                } = document.documentElement;
+
+                if (scrollTop + clientHeight >= scrollHeight) {
+                    page++;
+                    fetchPosts(page);
+                }
+            }, {
+                passive: true
+            });
+
+            $(document).on('click', '.comment-submit', function() {
+                const postId = $(this).attr('data-id');
+                const content = $(this).prev().val();
+
+                const comments_container = $(this).parents().eq(4);
+
+                $.ajax({
+                    url: '/addComment',
+                    method: 'POST',
+                    data: {
+                        postId: postId,
+                        content: content
+                    },
+                    success: function(response) {
+                        if (response.msg == 'success') {
+                            const name = response.comment.fullname;
+                            const timestamp = response.comment.timestamp;
+                            
+                            const comments_content = `
+                                <div class="px-5 pt-3  pb-5 border-t dark:border-darkmode-400">
+                                    <div class="pt-1">
+                                        <div class="flex">
+                                            <div class="w-8 h-8 flex-none image-fit mr-3">
+                                                <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-10.jpg">
+                                            </div>
+                                            <div class="ml-3 flex-1">
+                                                <div class="flex items-center"> <a href="" class="font-medium">${name}</a> <a href=""
+                                                        class="ml-auto text-xs text-slate-500">Reply</a> </div>
+                                                <div class="text-slate-500 text-xs sm:text-sm">${timestamp}</div>
+                                                <div class="mt-2">
+                                                    ${content}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            comments_container.append(comments_content);
+                            $('.comment-text').val('');
+                        } else {
+                            // Hande error
+                            console.log('An error occured');
+                        }
+                    }
+                });
+            });
+            
+        </script>
+</body>
+
+</html>
