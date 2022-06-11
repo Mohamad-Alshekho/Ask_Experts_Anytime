@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const stripe = require('stripe')('sk_test_51Jt44GHL6PH8xryFZW9pAUJAgEguqjot3BPLS6gaMEJqxpIatRZIUas19LkLZGlK16yLFT3SE72vNFVLctp3arfF00Rken2XKR');
+const stripe = require('stripe')('Stripe-private-key');
 
 const Expert = require('../models/expert');
 const expert = new Expert();
